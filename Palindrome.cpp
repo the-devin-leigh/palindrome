@@ -21,8 +21,19 @@ int main(){
 
   cout << palin << endl;
   cout << drome << endl;
+  strcpy(palindrome, drome); //copies edited string to new string for comparison
 
-  /* for(int j = 0; i < strlen(drome); i++){
-    
-     }*/
+  for(int j = 0; j < strlen(palindrome)/2; j++){
+    char temp = palindrome[j];
+    palindrome[j] = palindrome[strlen(drome)-j-1];
+    palindrome[strlen(drome)-j-1] = temp;  
+  }
+
+  cout << palindrome << endl;
+
+  if(strcmp(drome, palindrome) == 0){
+    cout << "That's a palindrome." << endl;
+  }else{
+    cout << "Not a palindrome." << endl; 
+  } 
 }
