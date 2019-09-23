@@ -1,3 +1,8 @@
+/*Author: Devin Leigh
+  Date: 9/23/2019
+  Project: Palindrome (reverses input strings to determine if the given input is a palindrome)
+*/
+
 #include <iostream>
 #include <cstring>
 
